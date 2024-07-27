@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FakeServerComponent2 from "./FakeServerComponent2";
-// import RealServerComponent1 from "./RealServerComponent1"; //will crash!
+import RealServerComponent1 from "./RealServerComponent1"; //will crash!
 
 const FakeServerComponent1 = ({ children }) => {
   const [count, setCount] = useState(5);
@@ -21,8 +21,7 @@ const FakeServerComponent1 = ({ children }) => {
       </button>
 
       <FakeServerComponent2 />
-      {children}
-      {/* <RealServerComponent1/> */}
+      <RealServerComponent1/>
     </div>
   );
 };

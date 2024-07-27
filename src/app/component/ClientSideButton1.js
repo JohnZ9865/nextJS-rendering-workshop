@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import FakeServerComponent1 from "./FakeServerComponent1";
+import RealServerComponent1 from "./RealServerComponent1";
 
-const ClientSideButton1 = ({ children }) => {
+const ClientSideButton1 = () => {
   const [count, setCount] = useState(0);
 
   const clicked = () => {
@@ -25,7 +26,8 @@ const ClientSideButton1 = ({ children }) => {
         Hi there
       </button>
 
-      <FakeServerComponent1>{children}</FakeServerComponent1>
+      <FakeServerComponent1/>
+      <RealServerComponent1/>
     </div>
   );
 };
