@@ -1,25 +1,13 @@
-async function getData() {
-    const res = await fetch('https://api.example.com/...')
-    // The return value is *not* serialized
-    // You can return Date, Map, Set, etc.
-   
-    if (!res.ok) {
-      // This will activate the closest `error.js` Error Boundary
-      throw new Error('Failed to fetch data')
-    }
-   
-    return res.json()
-  }
+function is_server() {
+    return ! (typeof window != 'undefined' && window.document);
+ }
 
 const RealServerComponent1 = () => {
-    const data = await getData()
+  console.log("Is server component?" + is_server());
 
-    console.log(data);
-    return (
-      <div>
-        Server component?
-      </div>
-    );
+  return (
+    <div className="border-4 border-red-500">Actual Server Component here</div>
+  );
 };
 
 export default RealServerComponent1;
