@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-
-
 const FakeServerComponent2 = () => {
   const [count, setCount] = useState(5);
 
@@ -9,13 +7,8 @@ const FakeServerComponent2 = () => {
     setCount(count + 1);
   };
 
-
-
-
   return (
     <div>
-      <div>This is server side text</div>
-
       <button
         onClick={clicked}
         className={`rounded-xl bg-green-500 p-4 ${

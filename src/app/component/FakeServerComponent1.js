@@ -21,7 +21,7 @@ const FakeServerComponent1 = ({ children }) => {
       </button>
 
       <FakeServerComponent2 />
-      <RealServerComponent1/>
+      <RealServerComponent1 />
     </div>
   );
 };

@@ -26,8 +26,8 @@ const ClientSideButton1 = () => {
         Hi there
       </button>
 
-      <FakeServerComponent1/>
-      <RealServerComponent1/>
+      <FakeServerComponent1 />
+      <RealServerComponent1 />
     </div>
   );
 };
